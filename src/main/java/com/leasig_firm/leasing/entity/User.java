@@ -1,4 +1,4 @@
-package com.leasing.entity;
+package com.leasig_firm.leasing.entity;
 import lombok.Data;
 
 @Data
@@ -9,5 +9,4 @@ public class User {
     private int age;
     private String login;
     private String password;
-    private String agreement;
 }

@@ -1,4 +1,4 @@
-package com.leasig_firm.leasing.service;
+package com.leasig_firm.mapper;
 import com.leasig_firm.leasing.entity.User;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
@@ -13,7 +13,6 @@ public class UserMapper implements RowMapper<User> {
         user.setAge(rs.getInt("age"));
         user.setLogin(rs.getString("user_login"));
         user.setPassword(rs.getString("user_password"));
-        user.setAgreement(rs.getString("agreement"));
         return user;
     }
 }
