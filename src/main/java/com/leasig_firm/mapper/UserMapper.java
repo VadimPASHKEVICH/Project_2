@@ -1,5 +1,5 @@
 package com.leasig_firm.mapper;
-import com.leasig_firm.leasing.entity.User;
+import com.leasig_firm.leasing.domain.User;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;

@@ -1,6 +1,4 @@
 package com.leasig_firm;
-
-import com.leasig_firm.Project2Application;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
