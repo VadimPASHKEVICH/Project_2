@@ -8,10 +8,8 @@ import lombok.ToString;
 import javax.persistence.*;
 import java.util.Collection;
 
-@Entity
 @Data
-@ToString(exclude = {"client_agreement", "credit_card"})
-@EqualsAndHashCode(exclude = {"client_agreement", "credit_card"})
+@Entity
 @Table(name = "users")
 public class User {
     @Id
@@ -28,12 +26,4 @@ public class User {
     private String login;
     @Column(name = "user_password")
     private String password;
-    @JsonManagedReference
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "users")
-    Collection<ClientAgreement> clientAgreements;
-
-    @JsonManagedReference
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "users")
-    Collection<CreditCard> creditCards;
-
 }

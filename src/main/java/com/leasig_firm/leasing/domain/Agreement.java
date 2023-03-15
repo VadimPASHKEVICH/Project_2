@@ -1,15 +1,11 @@
 package com.leasig_firm.leasing.domain;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
 import javax.persistence.*;
 @Data
-@ToString(exclude = {"users"})
-@EqualsAndHashCode(exclude = {"users"})
 @Entity
 @Table(name = "client_agreement")
-public class ClientAgreement {
+public class Agreement {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ca_seq")
     @SequenceGenerator(name = "ca_seq", sequenceName = "client_agreement_id_seq", allocationSize = 1)

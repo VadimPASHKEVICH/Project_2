@@ -1,4 +1,4 @@
-package com.leasig_firm.mapper;
+package com.leasig_firm.leasing.mapper;
 import com.leasig_firm.leasing.domain.User;
 import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;

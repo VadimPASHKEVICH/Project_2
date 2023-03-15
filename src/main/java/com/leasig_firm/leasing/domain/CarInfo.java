@@ -3,7 +3,6 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-
 import javax.persistence.*;
 
 @Data
@@ -26,6 +25,6 @@ public class CarInfo {
     @OneToOne(cascade = CascadeType.ALL)
     @JsonManagedReference
     @JoinColumn(name = "id_agreement")
-    private ClientAgreement agreement;
+    private Agreement agreement;
 
 }

@@ -33,9 +33,9 @@ public class UserController {
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         userService.createUser(user);
-        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<> (HttpStatus.CREATED);
     }
-    @PostMapping
+    @PutMapping
     public ResponseEntity<HttpStatus> updateUser(@RequestBody User user, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             for (ObjectError o : bindingResult.getAllErrors()) {

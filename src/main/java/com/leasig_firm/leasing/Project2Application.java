@@ -1,4 +1,5 @@
-package com.leasig_firm;
+package com.leasig_firm.leasing;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
